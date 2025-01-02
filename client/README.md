@@ -20,7 +20,7 @@ Future-Proof: Built with scalability and modularity in mind.
 
 💻 Tech Stack:
 
-Frontend: HTML, CSS, JavaScript
+Frontend: React.js
 Backend: Node.js with Express.js
 Database: MongoDB for efficient and scalable data storage
 
