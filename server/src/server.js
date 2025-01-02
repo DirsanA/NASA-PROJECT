@@ -1,9 +1,11 @@
-const express = require("express");
+const http = require("http");
 
-const app = express();
+const app = require("./app");
 
-const PORT = process.env.PORT || 8000; // it is or if not specify in the enviroment use 8000 port
+const PORT = process.env.PORT || 8000;
 
-app.listen(function () {
-  console.log(`the server is  listenning ${PORT}....`);
+const server = http.createServer(app);
+
+server.listen(PORT, function () {
+  console.log(`Listening on port ${PORT}...`);
 });
